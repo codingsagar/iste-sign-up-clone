@@ -1,0 +1,121 @@
+.form{
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 3rem;
+}
+
+label{
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+h1{
+    color: white;
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding-left: 10vw;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    background-color: #1571E3;
+    height: 8px;
+    width: 30px;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 300px;
+    font-size: 20px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #1571E3;
+    background: #000000;
+    margin: 0 5px;
+    letter-spacing: 1.5px;
+  }
+
+.checkboxes input{
+    width: 30px;
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+.form-grp{
+    margin: 20px 0;
+}
+
+#reg::after{
+    content: "*Only freshers can apply.";
+    display: block;
+    font-size: 8px;
+}
+
+.reg{
+    display: flex;
+}
+
+.checkboxes{
+    display: flex;
+    width:550px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 20px;
+}
+
+.checkboxes div{
+    width: 250px;
+}
+
+p{
+    color: white;
+    width: 500px;
+}
+
+main{
+    margin: 20px 0 100px 0;
+}
+
+@media (max-width:600px) {
+
+    .checkboxes{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .form-grp{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        width: 100%;
+        padding: 0 20px 0 5px;
+    }
+    main{
+        margin: 20px 0px 70px 20px  ;
+    }
+}
+
